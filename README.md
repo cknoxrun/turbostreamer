@@ -226,7 +226,7 @@ The only caveat with caching is inside and object you must cache both the key
 and the value. You cannot just cache the value. For example:
 
 ```ruby
-json.boject! do
+json.object! do
   json.key do
     json.cache! :key do
     	json.value! 'Cache this.'
@@ -238,7 +238,7 @@ end
 Will error out, but can easily be rewritten as:
 
 ```ruby
-json.boject! do
+json.object! do
   json.cache! :key do
     json.key do
       json.value! 'Cache this.'
@@ -357,9 +357,9 @@ This will produce 2 graph images on in folders
 Special Thanks & Contributors
 -----------------------------
 
-TurboStreamer is a fork of [Jbuilder](https://github.com/rails/jbuilder), built of
-what they have accopmlished and with out Jbuilder TurboStreamer would not be here today.
+TurboStreamer is a fork of [Jbuilder](https://github.com/rails/jbuilder), and is built on
+what they have accomplished. Without Jbuilder, TurboStreamer would not be here today.
 Thanks to everyone who's been a part of Jbuilder!
 
-* David Heinemeier Hansson - http://david.heinemeierhansson.com/ - for writing Jbuidler!!
-* Pavel Pravosud - http://pavel.pravosud.com/ - for maintaing and pushing Jbuilder forward
+* David Heinemeier Hansson - http://david.heinemeierhansson.com/ - for writing Jbuilder!!
+* Pavel Pravosud - http://pavel.pravosud.com/ - for maintaining and pushing Jbuilder forward
